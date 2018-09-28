@@ -8,7 +8,7 @@ export default class CounterStore {
   @action
   async queryData() {
     try {
-        let response = await axios.get('https://jsonplaceholder.typicode.com/todos/2d')
+        let response = await axios.get('https://jsonplaceholder.typicode.com/todos/2')
         this.data = response.data.title;
     } catch (error) {
         this.data = 'load Data Error';
